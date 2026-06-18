@@ -28,7 +28,7 @@ spec:
         env:
         - name: LAB_STATUS
           value: "PASSED"
-        image: jora450000/hello-app:1.0.0.17
+        image: docker.io/dromych/hello-app:1.0.0.18
         ports:
         - containerPort: 5000
         volumeMounts:
