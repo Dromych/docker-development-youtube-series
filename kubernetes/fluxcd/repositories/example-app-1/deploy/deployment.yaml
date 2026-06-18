@@ -22,7 +22,10 @@ spec:
     spec:
       containers:
       - name: example-app-1
-        image: jora450000/hello-app:1.0.0.18
+        env:
+        - name: LAB_STATUS
+          value: "PASSED"
+        image: jora450000/hello-app:1.0.0.17
         ports:
         - containerPort: 5000
         volumeMounts:
